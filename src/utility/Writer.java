@@ -21,6 +21,7 @@ public class Writer {
 	}	
 
 	public static void closeWriter() {
-		writer.close();
+		if (writer != null)
+			writer.close();
 	}
 }

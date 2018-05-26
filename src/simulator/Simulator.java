@@ -24,7 +24,7 @@ public class Simulator {
 			String line = reader.readLine();
 
 			if (line != null) {
-				numberOfSimulations = Integer.parseInt(line.split(" ")[0]);
+				numberOfSimulations = Integer.parseInt(line);
 				if (numberOfSimulations <= 0) {
 					throw (new ValidationException("Invalid number of simulations"));
 				}
